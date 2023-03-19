@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Articles-Badges-images.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-light navbar-expand-md py-3">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M312 168C312 181.3 301.3 192 288 192C274.7 192 264 181.3 264 168V24C264 10.75 274.7 0 288 0C301.3 0 312 10.75 312 24V168zM160 320C160 302.3 174.3 288 192 288H384C401.7 288 416 302.3 416 320V352H160V320zM82.74 410.5C90.87 394.3 107.5 384 125.7 384H450.3C468.5 384 485.1 394.3 493.3 410.5L520.8 465.7C531.5 486.1 516 512 492.2 512H83.78C59.99 512 44.52 486.1 55.16 465.7L82.74 410.5zM4.269 138.3C11.81 127.4 26.77 124.7 37.66 132.3L141.7 204.3C152.6 211.8 155.3 226.8 147.7 237.7C140.2 248.6 125.2 251.3 114.3 243.7L10.34 171.7C-.5568 164.2-3.275 149.2 4.269 138.3V138.3zM538.3 132.3C549.2 124.7 564.2 127.4 571.7 138.3C579.3 149.2 576.6 164.2 565.7 171.7L461.7 243.7C450.8 251.3 435.8 248.6 428.3 237.7C420.7 226.8 423.4 211.8 434.3 204.3L538.3 132.3z"></path>
+                </svg></span><span>minesweeper</span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navcol-2" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Game</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">about us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row   pt-2 d-block ">
+    <div class="col-md-8 col-xl-6 text-center d-none d-md-inline mx-auto container">
+        <h2 class="fw-bold border border-3" data-bss-hover-animate="rubberBand" id="title">Minesweeper</h2>
+    </div>
+</div>
+
+
+<div class="container m-auto d-none d-md-flex row "  data-aos="fade" data-aos-delay="1000" >
+
+    <iframe id="preview" src="pc111.html"  style="height: 735px ;width: 735px" class="col-10" ></iframe>
+    <div class="col-2  d-flex flex-column border-1 border border-primary rounded-pill rounded-1 d-md-none d-lg-flex" >
+        <input  type="button" class="btn btn-primary mt-3 rounded-pill mt-5" onclick="document.getElementById('preview').contentWindow.location.reload();" value="new game">
+        <small class="form-text mt-5">ROWS</small>
+        <input type="text" name="" id="rows" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
+        <small class="form-text mt-5">COLS</small>
+        <input type="text" name="" id="cols" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
+        <small class="form-text mt-5">MINE</small>
+        <input type="text" name="" id="mine" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
+        <input type="button" class="btn btn-success mt-5 rounded-pill" value="easy" onclick="document.getElementById('rows').value=10;document.getElementById('cols').value=10;document.getElementById('mine').value=10;document.getElementById('preview').contentWindow.location.reload();">
+        <input type="button" class="btn btn-info mt-5 rounded-pill" value="medium" onclick="document.getElementById('rows').value=16;document.getElementById('cols').value=16;document.getElementById('mine').value=10;document.getElementById('preview').contentWindow.location.reload();">
+        <input type="button" class="btn btn-danger mt-5 rounded-pill" value="hard" onclick="document.getElementById('rows').value=16;document.getElementById('cols').value=30;document.getElementById('mine').value=99;document.getElementById('preview').contentWindow.location.reload();">
+
+    </div>
+
+</div>
+
+<div class="container m-auto  d-sm-flex d-md-none  ">
+    <p class="text-bg-danger display-6 fst-italic" >use computer to play</p>
+</div>
+
+
+<div class="row mb-5 mt-5  " data-aos="fade" data-aos-delay="200">
+    <div class="col-md-8 col-xl-6 text-center d-none d-md-inline mx-auto">
+        <h2>简介</h2>
+        <p class="w-lg-50">游戏开始时，玩家可看到空白方块排成的矩形，方块数可由玩家自行选择。如果是第一次点开方块则不会踩到地雷。如果玩家点开没有地雷的方块，会有一个数字显现其上，这个数字代表着邻近方块有多少颗地雷（数字至多为8），玩家须运用逻辑来推断哪些方块含或不含地雷。
+
+            玩家可在推测有地雷的方块上点鼠标右键，以放置旗帜来标明地雷的位置；若再次点击右键，旗帜会变成问号，代表不确定是否有地雷存在；第三次点击右键后会使问号消失，成为空白的方块。若在已标明旗帜的方块点击左键，方块不会有任何的变动，若是点击标明问号的方块，则与点击空白的方块相同。若在游戏进行中错置旗帜或问号，可用右键来改变方块状态。</p>
+    </div>
+</div>
+
+    <div class="container py-4 py-xl-5" data-aos="fade" data-aos-delay="200">
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">初级</span>
+                    <h4>10 × 10，10颗地雷</h4>
+                    <div class="d-flex mt-5">
+                        <div>
+                            <a href="#title"><input type="text" class="btn btn btn-light d-grid"  value="let Go!!!" onclick="document.getElementById('rows').value=10;document.getElementById('cols').value=10;document.getElementById('mine').value=10;document.getElementById('preview').contentWindow.location.reload();"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">中级</span>
+                    <h4>16 × 16，40颗地雷</h4>
+                    <div class="d-flex mt-5">
+                        <div>
+                            <a href="#title"><input type="text" class="btn btn btn-light d-grid"  value="let Go!!!" onclick="document.getElementById('rows').value=16;document.getElementById('cols').value=16;document.getElementById('mine').value=40;document.getElementById('preview').contentWindow.location.reload();"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">高级</span>
+                    <h4>30 × 16，99颗地雷</h4>
+                    <div class="d-flex mt-5">
+                        <div>
+                            <a href="#title"><input type="text" class="btn btn btn-light d-grid"  value="let Go!!!" onclick="document.getElementById('rows').value=16;document.getElementById('cols').value=30;document.getElementById('mine').value=99;document.getElementById('preview').contentWindow.location.reload();"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/startup-modern.js"></script>
+<script src="assets/js/aos.min.js"></script>
+<script src="assets/js/bold-and-bright.js"></script>
+</body>
+
+</html>
