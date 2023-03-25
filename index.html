@@ -40,21 +40,29 @@
 <div class="container m-auto d-none d-md-flex row "  data-aos="fade" data-aos-delay="1000" >
 
     <iframe id="preview" src="pc111.html"  style="height: 800px ;width: 800px" class="col-10" ></iframe>
+
     <div class="col-2  d-flex flex-column border-1 border border-primary rounded-pill rounded-1 d-md-none d-lg-flex" >
-        <input  type="button" class="btn btn-primary mt-3 rounded-pill mt-5" onclick="document.getElementById('preview').contentWindow.location.reload();" value="new game">
-        <small class="form-text mt-3">ROWS</small>
+        <div class="view mt-5 border rounded-pill border-3 px-3">
+            <div id="HPVIEW" class="mt-2" class="text-black fs-3 mt-5 "></div>
+            <div id="FLAGSVIEW"></div>
+        </div>
+
+
+        <input  type="button" class="btn btn-primary rounded-pill mt-2" onclick="document.getElementById('preview').contentWindow.location.reload();" value="new game">
+
+
+            <small class="form-text mt-3">ROWS</small>
         <input type="text" name="" id="rows" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
-        <small class="form-text mt-5">COLS</small>
+        <small class="form-text mt-2">COLS</small>
         <input type="text" name="" id="cols" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
-        <small class="form-text mt-5">MINE</small>
+        <small class="form-text mt-2">MINE</small>
         <input type="text" name="" id="mine" class=" rounded-pill text-center"  placeholder="ROWS" value="10">
-        <small class="form-text mt-5">HP</small>
+        <small class="form-text mt-2">HP</small>
         <input type="text" name="" id="hp" class=" rounded-pill text-center"  placeholder="ROWS" value="3">
         <input type="button" class="btn btn-success mt-3 rounded-pill" value="easy" onclick="document.getElementById('rows').value=10;document.getElementById('cols').value=10;document.getElementById('mine').value=10;document.getElementById('hp').value=3;document.getElementById('preview').contentWindow.location.reload();">
         <input type="button" class="btn btn-info mt-3 rounded-pill" value="medium" onclick="document.getElementById('rows').value=16;document.getElementById('cols').value=16;document.getElementById('mine').value=10;document.getElementById('hp').value=3;document.getElementById('preview').contentWindow.location.reload();">
         <input type="button" class="btn btn-danger mt-3 rounded-pill" value="hard" onclick="document.getElementById('rows').value=25;document.getElementById('cols').value=25;document.getElementById('mine').value=99;document.getElementById('hp').value=5;document.getElementById('preview').contentWindow.location.reload();">
-        <p id="HPVIEW" class="mt-2" class="text-black fs-3"></p>
-        <p id="FLAGSVIEW"></p>
+
     </div>
 
 </div>

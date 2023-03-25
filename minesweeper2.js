@@ -221,9 +221,9 @@ class start_game{  // 開始遊戲
 
 // 判断游戏是否结束
          checkGameEnd() {
-            let revealedCount = 0;
-            let flaggedCount = 0;
-            let explodedMine = false;
+            let revealedCount = 0;　　// 已翻開方塊數
+            let flaggedCount = 0;　　// 已標記方塊數
+            let explodedMine = false;　　// 是否踩到地雷
             for (let i = 0; i < this.ROWS; i++) {
                 for (let j = 0; j < this.COLS; j++) {
                     const data = this.map[i][j];
